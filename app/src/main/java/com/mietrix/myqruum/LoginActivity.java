@@ -88,7 +88,7 @@ public class LoginActivity extends AppCompatActivity {
         adb.setCancelable(false);
         adb.setMessage(Html.fromHtml("For <b>NEW</b> user, please create a <b>Jom Check-In</b> account before login" +
                 "<br><br>" +
-                "<b>Your current UUM ID and password will not work with this application</b>"));
+                "<b>Your current ID and password will not work with this application</b>"));
 
         adb.setPositiveButton("I Understand", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
