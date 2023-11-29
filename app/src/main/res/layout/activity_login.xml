@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <!-- <GridLayout
+        android:layout_width="235dp"
+        android:layout_height="97dp"
+        android:columnCount="1" >
+         <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="0"
+            android:background="@null"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/splogo" />
+    </GridLayout> -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/aboutBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:background="@null"
+                    android:src="@drawable/ic_info" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/ic_launcher" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="QR Code Movement Tracing \n Application"
+                    android:textColor="@color/colorDeepBlue"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="We will beat COVID-19 together"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@null"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+                    <!-- <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Selamat Datang"
+             android:textStyle="bold" />
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Masuk ke akaun Asnaf-iCare anda"
+             android:textAppearance="?android:attr/textAppearanceSmall" /> -->
+
+                    <EditText
+                        android:id="@+id/icnum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/textboxcornerwhite"
+                        android:ems="10"
+                        android:hint="Enter Your Email"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#5e6266"
+                        android:textColorHint="#5e6266"
+                        android:textSize="18dp"></EditText>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true">
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/textboxcornerwhite"
+                            android:hint="Enter Password"
+                            android:inputType="textPassword"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="#5e6266"
+                            android:textColorHint="#5e6266"
+                            android:textSize="18dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <!-- Login Button -->
+
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/buttoncornerbluegrad"
+                        android:text="SIGN IN"
+                        android:textColor="#ffff"
+                        android:textSize="14dp" />
+
+                    <Button
+                        android:id="@+id/btntoRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@null"
+                        android:text="Not register yet? Click Here"
+                        android:textColor="@color/colorNextButton"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btntoForget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:text="Forgot Password?"
+                        android:textColor="@color/red2"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <!-- Link to Login Screen -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="© 2020 UUM. All Rights Reserved"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <Button
+         android:id="@+id/btnLinkToRegisterScreen"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="@null"
+         android:text="Not A Member? Sign Up Now"
+         android:textAllCaps="false"
+         android:textColor="#000000"
+         android:textSize="15dp" /> -->
+
+    <!-- <ImageButton
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:src="@drawable/exitbtn"
+         android:id="@+id/exit"
+         android:background="@android:color/transparent"
+         android:layout_weight="0.15"
+         /> -->
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Jom Check-In</string>
+    <string name="term"><p>The collection of your details is required under the Prevention and Control of Infectious Diseases Act 1988 [Act 342] and it is hereby compulsory.</p>
+        Email information is required for login purposes and it is unique to each person registered with this application. This information will not be used for marketing and product promotion purposes.
+        Failure to provide such information, we may not be able to offer our services to you.</string>
+</resources>
